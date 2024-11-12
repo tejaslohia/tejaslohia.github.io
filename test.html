@@ -1,9 +1,137 @@
-<html>
-    <head> 
-        <title> Test </title> 
-    </head>
-    <bod>
-        Test HTML
-    </bod>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Coding - Example Front Page</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
+        /* Header & Navbar */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            color: white;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #666;
+        }
+
+        /* Main content area */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .box {
+            width: 300px;
+            margin: 1rem;
+            padding: 1.5rem;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .box h3 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Learn Coding for Free!</h1>
+        <p>Your ultimate resource to learn HTML, CSS, JavaScript, and more</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#html">HTML</a>
+        <a href="#css">CSS</a>
+        <a href="#js">JavaScript</a>
+        <a href="#sql">SQL</a>
+        <a href="#python">Python</a>
+        <a href="#more">More</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="box" id="html">
+            <h3>HTML</h3>
+            <p>Learn the basics of HTML, the building block of web development.</p>
+            <a href="#html">Start Learning &rarr;</a>
+        </div>
+        <div class="box" id="css">
+            <h3>CSS</h3>
+            <p>Style your webpages with CSS to make them look visually appealing.</p>
+            <a href="#css">Start Learning &rarr;</a>
+        </div>
+        <div class="box" id="js">
+            <h3>JavaScript</h3>
+            <p>Make your website interactive with JavaScript programming.</p>
+            <a href="#js">Start Learning &rarr;</a>
+        </div>
+        <div class="box" id="sql">
+            <h3>SQL</h3>
+            <p>Learn how to manage data in databases using SQL.</p>
+            <a href="#sql">Start Learning &rarr;</a>
+        </div>
+        <div class="box" id="python">
+            <h3>Python</h3>
+            <p>Dive into Python programming for data analysis and web development.</p>
+            <a href="#python">Start Learning &rarr;</a>
+        </div>
+        <div class="box" id="more">
+            <h3>More Topics</h3>
+            <p>Explore additional resources on web development and programming.</p>
+            <a href="#more">Discover More &rarr;</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Coding Academy. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
+
